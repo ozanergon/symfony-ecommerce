@@ -1,0 +1,93 @@
+{% extends 'adminbase.html.twig' %}
+
+{% block title %}Comment index{% endblock %}
+
+{% block body %}
+    <!-- BEGIN: Subheader -->
+    <div class="m-subheader ">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h3 class="m-subheader__title m-subheader__title--separator">Comments List</h3>
+                <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+                    <li class="m-nav__item m-nav__item--home">
+                        <a href="/admin" class="m-nav__link m-nav__link--icon">
+                            <i class="m-nav__link-icon la la-home"></i>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">-</li>
+                    <li class="m-nav__item">
+                        <a href="/admin" class="m-nav__link">
+                            <span class="m-nav__link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">-</li>
+                    <li class="m-nav__item">
+                        <a href="" class="m-nav__link">
+                            <span class="m-nav__link-text">Comment List</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- END: Subheader -->
+    <div class="m-content">
+
+        <!--begin::Portlet-->
+        <div class="m-portlet">
+            <div class="m-portlet__head">
+                <div class="m-portlet__head-caption">
+                    <div class="m-portlet__head-title">
+                        <h3 class="m-portlet__head-text">
+                            Comments List
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="m-portlet__body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Subject</th>
+                        <th>Comment</th>
+                        <th>Status</th>
+                        <th>Ip</th>
+                        <th>User</th>
+                        <th>Product</th>
+                        <th>Created_at</th>
+                        <th>Rate</th>
+                        <th>actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for comment in comments %}
+                        <tr>
+                            <td>{{ comment.id }}</td>
+                            <td>{{ comment.subject }}</td>
+                            <td>{{ comment.comment }}</td>
+                            <td>{{ comment.status }}</td>
+                            <td>{{ comment.ip }}</td>
+                            <td><a href="{{ path('admin_user_show', {'id': comment.id}) }}"> {{ comment.name }} {{ comment.surname }}</td>
+                            <td><a href="{{ path('admin_product_show', {'id': comment.id}) }}">{{ comment.title }}</a></td>
+                            <td>{{ comment.created_at }}</td>
+                            <td>{{ comment.rate }}</td>
+                            <td>
+                                <a href="{{ path('admin_comment_show', {'id': comment.id}) }}" class="btn btn-block btn-success">Show</a>
+                            </td>
+                            <td>
+                                <a href="{{ path('admin_comment_edit', {'id': comment.id}) }}" class="btn btn-block btn-info">Edit</a>
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="10">no records found</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

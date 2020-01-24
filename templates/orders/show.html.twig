@@ -1,0 +1,66 @@
+{% extends 'homebase.html.twig' %}
+
+{% block title %}Orders{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="left-sidebar">
+                {{ include('user/usermenu.html.twig') }}
+            </div>
+        </div>
+        <div class="col-sm-9 padding-right">
+
+            <div class="left-sidebar">
+                <div class="brands_products"><!--brands_products-->
+                    <h1>Order Detail</h1>
+
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>Id</th>
+                            <td>{{ order.id }}</td>
+                        </tr>
+                        <tr>
+                            <th>Userid</th>
+                            <td>{{ order.userid }}</td>
+                        </tr>
+                        <tr>
+                            <th>Amount</th>
+                            <td>{{ order.amount }}</td>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <td>{{ order.name }}</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>{{ order.address }}</td>
+                        </tr>
+                        <tr>
+                            <th>City</th>
+                            <td>{{ order.city }}</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>{{ order.phone }}</td>
+                        </tr>
+                        <tr>
+                            <th>Shipinfo</th>
+                            <td>{{ order.shipinfo }}</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>{{ order.status }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="{{ path('orders_index') }}">back to list</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    {% endblock %}

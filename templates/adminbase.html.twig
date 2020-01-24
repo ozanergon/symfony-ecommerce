@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Metronic | Dashboard</title>
+        {% block head %} {% include('admin/head.html.twig') %}{% endblock %}
+    </head>
+    <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default">
+        <div class="m-grid m-grid--hor m-grid--root m-page">
+            {% block header %} {% include('admin/header.html.twig') %}{% endblock %}
+            <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
+                {% block sidebar %} {% include('admin/sidebar.html.twig') %}{% endblock %}
+                <div class="m-grid__item m-grid__item--fluid m-wrapper">
+                    {% block body %}{% endblock %}
+                </div>
+            </div>
+            {% block footer %} {% include('admin/footer.html.twig') %}{% endblock %}
+        </div>
+    </body>
+</html>

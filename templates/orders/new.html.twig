@@ -1,0 +1,28 @@
+{% extends 'homebase.html.twig' %}
+
+{% block title %}Shopcart Order Items{% endblock %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="left-sidebar">
+                {{ include('user/usermenu.html.twig') }}
+            </div>
+        </div>
+        <div class="col-sm-9 padding-right">
+
+            <div class="left-sidebar">
+                <div class="brands_products"><!--brands_products-->
+                    <div class="contact-form row">
+                        <div>
+                            <h5>Order Items</h5>
+                            {{ include('orders/_form.html.twig') }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    {% endblock %}

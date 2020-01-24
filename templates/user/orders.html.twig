@@ -1,0 +1,25 @@
+{% extends 'homebase.html.twig' %}
+
+{% block title %}{{ app.user.name }} Profile{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="left-sidebar">
+                        {{ include('user/usermenu.html.twig') }}
+                    </div>
+                </div>
+                <div class="col-sm-9 padding-right">
+
+                    <div class="left-sidebar">
+                        <div class="brands_products"><!--brands_products-->
+                            <h3><a href="#">My Orders List</a></h3>
+                        </div><!--features_items-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

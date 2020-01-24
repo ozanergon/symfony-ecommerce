@@ -1,0 +1,35 @@
+
+<div class="col-sm-12">
+    <div id="slider-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#slider-carousel" data-slide-to="1"></li>
+            <li data-target="#slider-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            {% set count = 0 %}
+            {% for rs in slider %}
+                {% set count = count+1 %}
+                <div class="item {% if count==1 %} active {%endif%}">
+                    <div class="col-sm-6">
+                        <h1><span>{{ rs.title }}</span></h1>
+                        <h2>{{ rs.description }}</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="{{ path('product_show', {'id': rs.id}) }} ">
+                            <img src="{{ asset('uploads/images/' ~ rs.image) }}" class="girl img-responsive" alt="" style="height: 484px; width: 441px;"/>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+
+</div>

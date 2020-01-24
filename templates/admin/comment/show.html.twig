@@ -1,0 +1,100 @@
+{% extends 'adminbase.html.twig' %}
+
+{% block title %}Comment{% endblock %}
+
+{% block body %}
+    <!-- BEGIN: Subheader -->
+    <div class="m-subheader ">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h3 class="m-subheader__title m-subheader__title--separator">Comment Detail</h3>
+                <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+                    <li class="m-nav__item m-nav__item--home">
+                        <a href="/admin" class="m-nav__link m-nav__link--icon">
+                            <i class="m-nav__link-icon la la-home"></i>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">-</li>
+                    <li class="m-nav__item">
+                        <a href="/admin" class="m-nav__link">
+                            <span class="m-nav__link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">-</li>
+                    <li class="m-nav__item">
+                        <a href="" class="m-nav__link">
+                            <span class="m-nav__link-text">Comment Detail</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- END: Subheader -->
+    <div class="m-content">
+
+        <!--begin::Portlet-->
+        <div class="m-portlet">
+            <div class="m-portlet__head">
+                <div class="m-portlet__head-caption">
+                    <div class="m-portlet__head-title">
+                        <h3 class="m-portlet__head-text">
+                            Contact Form Message Edit
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="m-portlet__body">
+                <h1>Comment</h1>
+
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th>Id</th>
+                        <td>{{ comment.id }}</td>
+                    </tr>
+                    <tr>
+                        <th>Subject</th>
+                        <td>{{ comment.subject }}</td>
+                    </tr>
+                    <tr>
+                        <th>Comment</th>
+                        <td>{{ comment.comment }}</td>
+                    </tr>
+                    <tr>
+                        <th>Status</th>
+                        <td>{{ comment.status }}</td>
+                    </tr>
+                    <tr>
+                        <th>Ip</th>
+                        <td>{{ comment.ip }}</td>
+                    </tr>
+                    <tr>
+                        <th>Userid</th>
+                        <td>{{ comment.userid }}</td>
+                    </tr>
+                    <tr>
+                        <th>Created_at</th>
+                        <td>{{ comment.createdAt ? comment.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                    </tr>
+                    <tr>
+                        <th>Updated_at</th>
+                        <td>{{ comment.updatedAt ? comment.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                    </tr>
+                    <tr>
+                        <th>Rate</th>
+                        <td>{{ comment.rate }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <a href="{{ path('admin_comment_index') }}" class="btn btn-info">Back to List</a>
+
+                <a href="{{ path('admin_comment_edit', {'id': comment.id}) }}" class="btn btn-success">Edit</a>
+
+                {{ include('admin/comment/_delete_form.html.twig') }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

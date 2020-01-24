@@ -1,0 +1,28 @@
+<section>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="left-sidebar">
+                <div class="brands_products"><!--brands_products-->
+                    <h2>User Menu</h2>
+                    <div class="brands-name">
+                        <ul class="nav nav-pills nav-stacked">
+
+                            <img src="{{asset('/uploads/images/' ~ app.user.image)}}"  style="height:90px; -webkit-border-radius: 90px; " alt="User Image" />
+
+                            {{ app.user.name }} {{ app.user.surname }}
+                            <li><a href="/user"> <span class="pull-right"></span>My Profile</a></li>
+                            <li><a href="/userpanel/edit"> <span class="pull-right"></span>Edit Profile</a></li>
+                            <li><a href="/user/product"> <span class="pull-right"></span>My Products</a></li>
+                            <li><a href="/user/comments"> <span class="pull-right"></span>My Comments</a></li>
+                            <li><a href="/orders"> <span class="pull-right"></span>My Order</a></li>
+                            <li><a href="/shopcart"> <span class="pull-right"></span>My Cart</a></li>
+                            <li><a href="/logout"> <span class="pull-right"></span>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>

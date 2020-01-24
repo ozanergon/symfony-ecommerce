@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="Modal examples">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <!--begin::Web font -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                "families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"]
+            },
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+
+    <!--end::Web font -->
+
+    <!--begin::Page Vendors Styles -->
+    <link href="{{asset('assets')}}/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+
+    <!--RTL version:<link href="{{asset('assets')}}/vendors/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+
+    <!--end::Page Vendors Styles -->
+
+    <!--begin::Base Styles -->
+    <link href="{{asset('assets')}}/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+
+    <!--RTL version:<link href="{{asset('assets')}}/vendors/base/vendors.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+    <link href="{{asset('assets')}}/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+
+    <!--RTL version:<link href="{{asset('assets')}}/demo/default/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+
+    <!--end::Base Styles -->
+    <link rel="shortcut icon" href="{{asset('assets')}}/demo/default/media/img/logo/favicon.ico" />
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-37564768-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</head>
+
+<h1>Order Detail</h1>
+
+<table class="table">
+    <tbody>
+    <tr>
+        <th>Id</th>
+        <td>{{ order.id }}</td>
+    </tr>
+    <tr>
+        <th>Userid</th>
+        <td>{{ order.userid }}</td>
+    </tr>
+    <tr>
+        <th>Amount</th>
+        <td>{{ order.amount }}</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>{{ order.name }}</td>
+    </tr>
+    <tr>
+        <th>Address</th>
+        <td>{{ order.address }}</td>
+    </tr>
+    <tr>
+        <th>City</th>
+        <td>{{ order.city }}</td>
+    </tr>
+    <tr>
+        <th>Phone</th>
+        <td>{{ order.phone }}</td>
+    </tr>
+
+    <form action="{{ path('admin_orders_update',{'id': order.id}) }}" method="post">
+        <tr>
+            <th>Shipinfo</th>
+            <td> <textarea name="shipinfo" cols="100" rows="3">{{ order.shipinfo }}</textarea></td>
+        </tr>
+        <tr>
+            <th>Admin Note</th>
+            <td> <textarea name="note" cols="100" rows="3">{{ order.note }}</textarea></td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>
+                <select name="status">
+                    <option>{{ order.status }}</option>
+                    <option>Accepted</option>
+                    <option>InShipping</option>
+                    <option>Canceled</option>
+                    <option>Completed</option>
+                </select>
+                <input type="submit" value="Guncelle">
+            </td>
+        </tr>
+    </form>
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% set total = 0 %}
+        {% for rs in orderdetail %}
+            <tr>
+                <td>{{ rs.id }}</td>
+                <td>{{ rs.name }}</td>
+                <td>{{ rs.price }}</td>
+                <td>{{ rs.quantity }}</td>
+                <td>{{ rs.amount }}</td>
+                <td>{{ rs.status }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">Order Detail</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="5"><b>Toplam Alışveriş Tutarı : {{ order.amount }}</b></td>
+        </tr>
+    </tbody>
+</table>
+<a href="{{ path('orders_index') }}">back to list</a>
+</html>
+
+

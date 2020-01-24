@@ -1,0 +1,62 @@
+{% extends 'homebase.html.twig' %}
+
+{% block title %}Orders index{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="left-sidebar">
+                        {{ include('user/usermenu.html.twig') }}
+                    </div>
+                </div>
+                <div class="col-sm-9 padding-right">
+
+                    <div class="left-sidebar">
+                        <div class="brands_products"><!--brands_products-->
+                            <h3>Order List</h3>
+
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Amount</th>
+                                    <th>City</th>
+                                    <th>Phone</th>
+                                    <th>Shipinfo</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for order in orders %}
+                                    <tr>
+                                        <td>{{ order.name }}</td>
+                                        <td>{{ order.amount }}</td>
+                                        <td>{{ order.city }}</td>
+                                        <td>{{ order.phone }}</td>
+                                        <td>{{ order.shipinfo }}</td>
+                                        <td>{{ order.status }}</td>
+                                        <td>
+                                            <a href="{{ path('orders_show', {'id': order.id}) }}" class="btn btn-info">Show</a>
+                                        </td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="13">no records found</td>
+                                    </tr>
+                                {% endfor %}
+
+                                </tbody>
+
+                            </table>
+                            <a href="{{ path('orders_new') }}">Create new</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

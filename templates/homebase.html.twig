@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{% block description %}En iyi online E-Ticaret sitesi{% endblock %}">
+        <meta name="keywords" content="{% block keywords %}urun,satis,alim,satim,ticaret{% endblock %}">
+        <meta name="author" content="Ozan Ergon">
+        <title>Best Online E-Commerce Site!</title>
+        {% block head %} {% include('home/head.html.twig') %}{% endblock %}
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+            {% block header %} {% include('home/header.html.twig') %}{% endblock %}
+            <section>
+                <div class="container">
+                    <div class="row">
+                        {% block body %}{% endblock %}
+                    </div>
+                </div>
+            </section>
+            {% block footer %} {% include('home/footer.html.twig') %}{% endblock %}
+            {% block javascripts %} {% include('home/javascript.html.twig') %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6d51b78f-392f-46c1-8c7a-c186293c30cb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ecommerceproject: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ecommerceproject: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="shopcart: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ecommerce" />
+  </component>
+  <component name="ProjectId" id="1TTPrcUoBZPbGYjfeTMqp2Xp1V8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/userpanel" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ecommerce\templates\userpanel" />
+      <recent name="C:\xampp\htdocs\ecommerce\templates\userpanel\userpanel" />
+      <recent name="C:\xampp\htdocs\ecommerce\templates\home" />
+      <recent name="C:\xampp\htdocs\ecommerce\src\Controller\Admin" />
+      <recent name="C:\xampp\htdocs\ecommerce\templates\user" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ecommerce\templates\userpanel" />
+      <recent name="C:\xampp\htdocs\ecommerce\templates\security" />
+      <recent name="C:\xampp\htdocs\ecommerce\src\Controller" />
+      <recent name="C:\xampp\htdocs\ecommerce\src\Controller\Admin" />
+      <recent name="C:\xampp\htdocs\ecommerce\templates\admin" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d51b78f-392f-46c1-8c7a-c186293c30cb" name="Default Changelist" comment="" />
+      <created>1573481311236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573481311236</updated>
+      <workItem from="1573481312446" duration="18056000" />
+      <workItem from="1573535745575" duration="5745000" />
+      <workItem from="1573636786764" duration="655000" />
+      <workItem from="1573637520620" duration="3477000" />
+      <workItem from="1574183094652" duration="10089000" />
+      <workItem from="1574240521032" duration="77000" />
+      <workItem from="1574240686775" duration="6619000" />
+      <workItem from="1574247921240" duration="2637000" />
+      <workItem from="1574284436382" duration="3417000" />
+      <workItem from="1574844280675" duration="125000" />
+      <workItem from="1574847322450" duration="2489000" />
+      <workItem from="1574852380856" duration="155000" />
+      <workItem from="1574872150099" duration="4267000" />
+      <workItem from="1574927275075" duration="3160000" />
+      <workItem from="1575025173510" duration="2777000" />
+      <workItem from="1575079696092" duration="19851000" />
+      <workItem from="1575110845493" duration="1889000" />
+      <workItem from="1575113687344" duration="186000" />
+      <workItem from="1575114147888" duration="3167000" />
+      <workItem from="1575117981886" duration="2856000" />
+      <workItem from="1575137735222" duration="12679000" />
+      <workItem from="1575166872203" duration="12169000" />
+      <workItem from="1575181482614" duration="10760000" />
+      <workItem from="1575484254240" duration="7713000" />
+      <workItem from="1575497700056" duration="4884000" />
+      <workItem from="1575514665802" duration="18455000" />
+      <workItem from="1575620713394" duration="479000" />
+      <workItem from="1575983255988" duration="8771000" />
+      <workItem from="1576040430017" duration="12978000" />
+      <workItem from="1576057474158" duration="911000" />
+      <workItem from="1576076570216" duration="2786000" />
+      <workItem from="1576267018066" duration="4351000" />
+      <workItem from="1576323634740" duration="4970000" />
+      <workItem from="1576341317035" duration="2664000" />
+      <workItem from="1576400778616" duration="3000" />
+      <workItem from="1576409478788" duration="8422000" />
+      <workItem from="1576487288633" duration="13776000" />
+      <workItem from="1576611844079" duration="7993000" />
+      <workItem from="1576643233734" duration="8958000" />
+      <workItem from="1576678823849" duration="3283000" />
+      <workItem from="1576685389585" duration="5852000" />
+      <workItem from="1576701769537" duration="2716000" />
+      <workItem from="1576733131877" duration="10165000" />
+      <workItem from="1576843916962" duration="2957000" />
+      <workItem from="1576858090040" duration="8687000" />
+      <workItem from="1576867031711" duration="414000" />
+      <workItem from="1576947948597" duration="1451000" />
+      <workItem from="1577009169932" duration="12000" />
+      <workItem from="1577184770569" duration="68000" />
+      <workItem from="1577484804620" duration="21000" />
+      <workItem from="1577533987634" duration="6006000" />
+      <workItem from="1577586085936" duration="7158000" />
+      <workItem from="1577610457100" duration="5591000" />
+      <workItem from="1577628369110" duration="2721000" />
+      <workItem from="1577643431614" duration="9225000" />
+      <workItem from="1577713915833" duration="1200000" />
+      <workItem from="1577784713339" duration="1320000" />
+      <workItem from="1577787067189" duration="1206000" />
+      <workItem from="1577825280708" duration="1967000" />
+      <workItem from="1578671361465" duration="7704000" />
+      <workItem from="1578680719565" duration="2169000" />
+      <workItem from="1578725485500" duration="33489000" />
+      <workItem from="1578808754909" duration="13841000" />
+      <workItem from="1578845165110" duration="24000" />
+      <workItem from="1578907044750" duration="8554000" />
+      <workItem from="1578938838057" duration="14738000" />
+      <workItem from="1578957921309" duration="249000" />
+      <workItem from="1578960607913" duration="1415000" />
+      <workItem from="1578981389166" duration="1805000" />
+      <workItem from="1578984649775" duration="608000" />
+      <workItem from="1579032300148" duration="6644000" />
+      <workItem from="1579070170729" duration="9292000" />
+      <workItem from="1579080959584" duration="686000" />
+      <workItem from="1579085682253" duration="7187000" />
+      <workItem from="1579898197344" duration="1519000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="190" key="#HTTP_Proxy" timestamp="1576618761246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="190" key="#HTTP_Proxy/0.0.1920.1040@0.0.1920.1040" timestamp="1576618761246" />
+    <state x="552" y="178" key="#SQL_Dialects" timestamp="1577643955536">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1577643955536" />
+    <state x="0" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576687846799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576687846799" />
+    <state x="210" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578982157945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="210" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578982157945" />
+    <state x="260" y="265" key="FileChooserDialogImpl" timestamp="1578767675143">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="260" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578767675143" />
+    <state width="1293" height="278" key="GridCell.Tab.0.bottom" timestamp="1578671412806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578671412806" />
+    <state width="1293" height="278" key="GridCell.Tab.0.center" timestamp="1578671412806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578671412806" />
+    <state width="1293" height="278" key="GridCell.Tab.0.left" timestamp="1578671412806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578671412806" />
+    <state width="1293" height="278" key="GridCell.Tab.0.right" timestamp="1578671412806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578671412806" />
+    <state width="240" height="457" key="HiddenNamespacesPopup" timestamp="1576618952534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="240" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1576618952534" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1579094224866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579094224866" />
+    <state x="210" y="328" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1577592977887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="210" y="328" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577592977887" />
+    <state x="953" y="0" width="974" height="1047" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578982876714">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578982876714" />
+    <state x="712" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1579898206638">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="712" y="358" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579898206638" />
+    <state x="242" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576613995746">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="242" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576613995746" />
+    <state x="143" y="242" key="run.anything.popup" timestamp="1578753505277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578753505277" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1576682960819">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576682960819" />
+  </component>
+</project>

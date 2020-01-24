@@ -1,0 +1,36 @@
+{% extends 'homebase.html.twig' %}
+
+{% block title %}{{ app.user.name }} Profile{% endblock %}
+
+{% block body %}
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="left-sidebar">
+                        {{ include('user/usermenu.html.twig') }}
+                    </div>
+                </div>
+                <div class="col-sm-9 padding-right">
+
+                    <div class="left-sidebar">
+                        <div class="brands_products"><!--brands_products-->
+                        <h3><a href="#">User Product Edit</a></h3>
+                        <h1>Edit Product</h1>
+
+                        {{ include('product/_form.html.twig', {'button_label': 'Update'}) }}
+
+                        <a href="{{ path('user_product_index') }}" class="btn btn-info">Back to List</a>
+
+                        {{ include('product/_delete_form.html.twig') }}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+{% endblock %}
+
+

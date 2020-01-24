@@ -1,0 +1,87 @@
+{% extends 'homebase.html.twig' %}
+
+{% block title %}{{ app.user.name }} Profile{% endblock %}
+
+{% block body %}
+    <SCRIPT language="JavaScript" type="text/javascript">
+        function openWin(windowsURL, windowName, windowFeatures ) { window.open(windowsURL, windowName,windowFeatures); }
+    </SCRIPT>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="left-sidebar">
+                        {{ include('user/usermenu.html.twig') }}
+                    </div>
+                </div>
+                <div class="col-sm-9 padding-right">
+
+                    <div class="left-sidebar">
+                        <div class="brands_products"><!--brands_products-->
+                            <h3><a href="#">My Product List</a></h3>
+                            <a href="{{ path('user_product_new') }}" class="btn btn-success">Create New Product</a>
+
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Title</th>
+                                    <th>Keywords</th>
+                                    <th>Description</th>
+                                    <th>Image</th>
+                                    <th>Amount</th>
+                                    <th>Detail</th>
+                                    <th>Price</th>
+                                    <th>Type</th>
+                                    <th>Year</th>
+                                    <th>I.Gallery</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for product in products %}
+                                    <tr>
+                                        <td>{{ product.id }}</td>
+                                        <td>{{ product.title }}</td>
+                                        <td>{{ product.keywords }}</td>
+                                        <td>{{ product.description }}</td>
+                                        <td><img src="{{ asset('uploads/images/' ~ product.image) }}" height="40"> </td>
+                                        <td>{{ product.amount }}</td>
+                                        <td>{{ product.detail }}</td>
+                                        <td>{{ product.price }}</td>
+                                        <td>{{ product.type }}</td>
+                                        <td>{{ product.year }}</td>
+                                        <td>
+                                            <a href="javascript:openWin('{{ path('user_image_new', {'id': product.id}) }}','','toolbar=no,location=no,directories=0,status=no,top=50,left=100,menuBar=no,scrollBars=yes,resizable=no,width=900,height=600');">
+                                                <img src="{{ asset('assets/admin/img') }}/gallery.png" height="40">
+                                            </a>
+                                        </td>
+                                        <td>{{ product.status }}</td>
+                                        <td >
+                                            <a href="{{ path('user_product_show', {'id': product.id}) }}" class="btn btn-info">Show</a>
+
+                                        </td>
+                                        <td>
+                                            <a href="{{ path('user_product_edit', {'id': product.id}) }}" class="btn btn-success">Edit</a>
+                                        </td>
+                                        <td>
+                                            {{ include('product/_delete_form.html.twig') }}
+                                        </td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="15">no records found</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

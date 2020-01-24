@@ -1,0 +1,69 @@
+{% extends 'homebase.html.twig' %}
+
+{% block title %} Shopcart{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="left-sidebar">
+                        {{ include('user/usermenu.html.twig') }}
+                    </div>
+                </div>
+                <div class="col-sm-9 padding-right">
+
+                    <div class="left-sidebar">
+                        <div class="brands_products"><!--brands_products-->
+                            <section>
+                                <div class="container">
+                                    <div class="row">
+                                        <h1>Shopcart index</h1>
+                                        {{ include ('messages.html.twig') }}
+
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Product Name</th>
+                                                <th>Sale Price</th>
+                                                <th>Quantity</th>
+                                                <th>Total</th>
+                                                <th>actions</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% set total = 0 %}
+                                            {% for shopcart in shopcarts %}
+                                                <tr>
+                                                    <td>{{ shopcart.id }}</td>
+                                                    <td>{{ shopcart.title }}</td>
+                                                    <td>{{ shopcart.price }}</td>
+                                                    <td>{{ shopcart.quantity }}</td>
+                                                    <td>{{ shopcart.quantity * shopcart.price }}</td>
+                                                    <td>
+                                                        <a href="{{ path('shopcart_del', {'id': shopcart.id}) }}" onclick="return confirm('Silinecek Emin misin?');" class = "btn btn-danger">Delete</a>
+                                                    </td>
+                                                </tr>
+                                                {% set total = total + (shopcart.quantity * shopcart.price) %}
+                                            {% else %}
+                                                <tr>
+                                                    <td colspan="5">Shopcart is Empty</td>
+                                                </tr>
+                                            {% endfor %}
+                                            <tr>
+                                                <td colspan="5"> <b>Toplam Alışveriş Tutarı: {{ total }}</b></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <a href="{{ path('orders_new') }}" class="btn btn-block btn-success btn-large" >Ürünleri Satın Al</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
