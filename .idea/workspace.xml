@@ -53,7 +53,11 @@
   <component name="FavoritesManager">
     <favorites_list name="ecommerce" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TTPrcUoBZPbGYjfeTMqp2Xp1V8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -184,7 +188,7 @@
       <workItem from="1579070170729" duration="9292000" />
       <workItem from="1579080959584" duration="686000" />
       <workItem from="1579085682253" duration="7187000" />
-      <workItem from="1579898197344" duration="1519000" />
+      <workItem from="1579898197344" duration="2222000" />
     </task>
     <servers />
   </component>
